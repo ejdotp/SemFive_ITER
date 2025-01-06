@@ -1,0 +1,61 @@
+student@C-126-C045:~$ cd 2241016309                                                          //change directory
+student@C-126-C045:~/2241016309$ mkdir DOS                                                   //CREATE Folder "DOS"
+student@C-126-C045:~$ cd 2241016309/DOS                                                     
+student@C-126-C045:~/2241016309/DOS$ touch HelloWorld.txt                                    //creates file
+student@C-126-C045:~/2241016309/DOS$ ls                                                      //List Directory
+HelloMars.txt  HelloWorld.txt
+student@C-126-C045:~/2241016309/DOS$ cat > HelloNeptune.txt                                  //creates file but wont exit the shell
+
+^C                                                                                           //press ctrl+C in such case
+student@C-126-C045:~/2241016309/DOS$ ls
+HelloMars.txt  HelloNeptune.txt  HelloWorld.txt
+student@C-126-C045:~/2241016309/DOS$ echo cat > HelloEarth.txt                               //instead use it with echo only
+student@C-126-C045:~/2241016309/DOS$ ls
+HelloEarth.txt  HelloMars.txt  HelloNeptune.txt  HelloWorld.txt
+student@C-126-C045:~/2241016309/DOS$ echo cat HelloWorld.txt > HelloEarth.txt                //print "cat HelloWorld.txt" instead
+student@C-126-C045:~/2241016309/DOS$ echo | cat HelloWorld.txt > HelloEarth.txt              //instead do this, copies text
+student@C-126-C045:~/2241016309/DOS$ echo | cat -n/cat -b HelloEarth.txt                     //ppt wanted us to use either or TT
+cat: invalid option -- '/'
+Try 'cat --help' for more information.
+student@C-126-C045:~/2241016309/DOS$ echo | cat -b HelloEarth.txt                            //either can be used to read file with indexed lines
+     1	student@C-126-C045:~$ cd 2241016309/DOS //change directory
+     .
+     .
+     .
+
+student@C-126-C045:~/2241016309/DOS$ echo | cat -n HelloEarth.txt
+     1	student@C-126-C045:~$ cd 2241016309/DOS //change directory
+     .
+     .
+     .
+     
+student@C-126-C045:~/2241016309/DOS$ echo | cat HelloWorld.txt                               //directly read file
+Hello World!
+student@C-126-C045:~/2241016309/DOS$ who                                                     //lists users
+student  tty2         2024-09-03 13:44 (tty2)
+student@C-126-C045:~/2241016309/DOS$ whoami                                                  //current user
+student
+student@C-126-C045:~/2241016309/DOS$ pwd                                                     //current directory
+/home/student/2241016309/DOS
+student@C-126-C045:~/2241016309/DOS$ cat HelloWorld.txt HelloMars.txt HelloNeptune.txt > HelloMercury.txt            //concats files into new file
+student@C-126-C045:~/2241016309/DOS$ cat HelloMercury.txt
+Hello World!
+Hello World!
+Hello World!
+student@C-126-C045:~/2241016309/DOS$ cat > HelloUranus.txt                                   //create file using cat
+hello                                                                                        //then it enters the file for inside file operations
+^C											     //exit using ctrl+c when done
+student@C-126-C045:~/2241016309/DOS$ cat HelloUranus
+cat: HelloUranus: No such file or directory
+student@C-126-C045:~/2241016309/DOS$ cat HelloUranus.txt                                     
+hello
+student@C-126-C045:~/2241016309/DOS$ cat -e HelloMercury.txt                                 //Ends each line with $
+Hello World!$
+Hello World!$
+Hello World!$
+student@C-126-C045:~/2241016309/DOS$ 
+
+
+
+
+

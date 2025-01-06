@@ -1,0 +1,47 @@
+hello world
+Hello World
+Hello Worlds
+Hello Moon
+Good Night
+
+student@C-126-C045:~/2241016309/DOS/Lab3$ echo "hello world" | cat > lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ echo "Hello World" | cat >> lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ echo "Hello Worlds" | cat >> lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ echo "Hello Moon" | cat >> lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ echo "Good Night" | cat >> lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ cat lab3
+hello world
+Hello World
+Hello Worlds
+Hello Moon
+Good Night
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -i world lab3
+hello world
+Hello World
+Hello Worlds
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -l lab3
+^C
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -l
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -l world lab3
+lab3
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -n world lab3
+1:hello world
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -v world lab3
+Hello World
+Hello Worlds
+Hello Moon
+Good Night
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -A 1 world lab3
+hello world
+Hello World
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -B 2 Moon lab3
+Hello World
+Hello Worlds
+Hello Moon
+student@C-126-C045:~/2241016309/DOS/Lab3$ grep -C 1 Moon lab3
+Hello Worlds
+Hello Moon
+Good Night
+

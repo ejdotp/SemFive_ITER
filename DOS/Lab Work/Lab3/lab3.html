@@ -1,0 +1,56 @@
+<pre><font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo &quot;hello world&quot; | cat &gt; lab3   <b>[creates file with text written]</b>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo &quot;Hello World&quot; | cat &gt;&gt; lab3   <b>[adds to file]</b>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo &quot;Hello Worlds&quot; | cat &gt;&gt; lab3
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo &quot;Hello Moon&quot; | cat &gt;&gt; lab3
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo &quot;Good Night&quot; | cat &gt;&gt; lab3
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ cat lab3
+hello world
+Hello World
+Hello Worlds
+Hello Moon
+Good Night
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -i world lab3  <b>[finds lines with same word in a file ignoring case]</b>
+hello <font color="#C01C28"><b>world</b></font>
+Hello <font color="#C01C28"><b>World</b></font>
+Hello <font color="#C01C28"><b>World</b></font>s
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -l world lab3  <b>[finds file containing the word, case sensitive]</b>
+<font color="#A347BA">lab3</font>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -n world lab3  <b>[finds line and line number containing string, case sensitive]</b>
+<font color="#26A269">1</font><font color="#2AA1B3">:</font>hello <font color="#C01C28"><b>world</b></font>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -v world lab3  <b>[prints all lines except line containing string, case sensitive]</b>
+Hello World
+Hello Worlds
+Hello Moon
+Good Night
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -A 1 world lab3  <b>[prints n lines after target line]</b>
+hello <font color="#C01C28"><b>world</b></font>
+Hello World
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -B 2 Moon lab3  <b>[prints n number of lines before target line]</b>
+Hello World
+Hello Worlds
+Hello <font color="#C01C28"><b>Moon</b></font>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ grep -C 1 Moon lab3  <b>[prints n number of lines before and after target line]</b>
+Hello Worlds
+Hello <font color="#C01C28"><b>Moon</b></font>
+Good Night
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $SHELL  <b>[provides shell version]</b>
+/bin/bash
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ NAME = &quot;XYZ&quot;  <b>[space dele habani]</b>
+NAME: command not found
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ NAME=&quot;XYZ&quot;  <b>[declare variable]</b>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo NAME  <b>[returns "NAME" only -_-]</b>
+NAME
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $NAME  <b>[returns stuff inside the variable]</b>
+XYZ
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ readonly NAME  <b>[makes variable readonly, like a constant]</b>
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ NAME=&quot;ABC&quot;  <b>[Like this:]</b>
+bash: NAME: readonly variable
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $BASH_VERSION <b>[returns bash version]</b>
+5.1.16(1)-release
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $HOME <b>[returns home directory]</b>
+/home/student
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $HOSTNAME <b>[returns PC name]</b>
+C-126-C045
+<font color="#26A269"><b>student@C-126-C045</b></font>:<font color="#12488B"><b>~/2241016309/DOS/Lab3</b></font>$ echo $USERNAME  <b>[returns username]</b>
+student
+</pre>
