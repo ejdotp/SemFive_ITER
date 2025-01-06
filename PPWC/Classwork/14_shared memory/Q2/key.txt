@@ -1,0 +1,17 @@
+Q1. Create a C code named shmwriter.c to create a shared memory segment of integer size and store 500 to the segment. Create another program named shmreader.c to access the stored value from the shared memory segment and display it. Let the shmreader.c update the value to 600. Now update the shmwriter.c code to get the updated value and display it. You are not allowed to use semaphore.
+
+Output:
+student@C-126-C045:~/2241016309/PPWC/14_shared memory/Q2$ ./write
+Shared memory Identifier=45
+Current value in shared memory: 600
+Value written to shared memory: 500
+student@C-126-C045:~/2241016309/PPWC/14_shared memory/Q2$ ./read
+Shared memory Identifier = 45
+Value in shared memory= 500
+Value updated in shared memory = 600
+student@C-126-C045:~/2241016309/PPWC/14_shared memory/Q2$ ./write
+Shared memory Identifier=45
+Current value in shared memory: 600
+Value written to shared memory: 500
+student@C-126-C045:~/2241016309/PPWC/14_shared memory/Q2$ 
+
