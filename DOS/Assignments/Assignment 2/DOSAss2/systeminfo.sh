@@ -1,0 +1,5 @@
+echo "Login Name: $LOGNAME"
+echo "UNIX System Name: `uname`"
+echo "SHELL Name: $SHELL"
+echo "PATH: $PWD"
+echo "Total Files: `ls`"
